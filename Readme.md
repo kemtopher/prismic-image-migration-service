@@ -19,12 +19,12 @@ data.content = [
 ]
 ```
 
-#This script normalizes that so:
+#### This script normalizes that so:
 image = featured_image
 content = body content (cleared)
 Images are structured instead of embedded in RichText
 
-#What The Script Does
+#### What The Script Does
 For each post document:
 Skips if featured_image already exists
 Checks that content[0] is an image block
@@ -32,14 +32,14 @@ Copies image data into featured_image
 Optionally clears content
 Writes the updated document to a Migration Release
 
-#It includes:
+#### It includes:
 Rate-limit protection
 Retry logic
 Throttling between requests
 Dry-run mode
 
 
-##Environment Variables
+### Environment Variables
 
 PRISMIC_REPOSITORY="your-repo-name"
 PRISMIC_CONTENT_API_TOKEN="..."      # Read token
@@ -59,15 +59,15 @@ Migration key → Migration Release screen
 ##Install Dependencies
 npm install @prismicio/client axios dotenv
 
-##Running The Script
-#1. Dry Run (Safe Mode)
+#### Running The Script
+1. Dry Run (Safe Mode)
 This does NOT modify Prismic repo.
 DRY_RUN=1 node index.mjs
 
-#2. Live Mode (Writes to Migration Release Only)
+2. Live Mode (Writes to Migration Release Only)
 DRY_RUN=0 node index.mjs
 
-##After running:
+#### After running:
 Prismic Dashboard → Migrations → Your Migration Release
 Review the changes.
 Then manually click Publish Release when ready.
