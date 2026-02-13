@@ -1,0 +1,16 @@
+{
+  "name": "prismic-migration",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@prismicio/client": "^7.21.6",
+    "axios": "^1.13.5",
+    "dotenv": "^17.3.1"
+  }
+}
