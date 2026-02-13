@@ -17,7 +17,7 @@ data.content = [
     dimensions: { width, height }
   }
 ]
-
+```
 
 #This script normalizes that so:
 image = featured_image
