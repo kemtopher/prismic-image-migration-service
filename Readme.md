@@ -53,7 +53,7 @@ THROTTLE_MS="350"
 MAX_RETRIES="8"
 ```
 
-### Where To Find These
+#### Where To Find These
 Repository name → Prismic dashboard
 API tokens → Settings → API & Security
 Migration key → Migration Release screen
