@@ -39,27 +39,29 @@ Throttling between requests
 Dry-run mode
 
 
-### Environment Variables
+## Environment Variables
 
+```bash
 PRISMIC_REPOSITORY="your-repo-name"
-PRISMIC_CONTENT_API_TOKEN="..."      # Read token
-PRISMIC_WRITE_API_TOKEN="..."        # Write token
-PRISMIC_MIGRATION_API_KEY="..."      # Migration Release key
+PRISMIC_CONTENT_API_TOKEN="..."
+PRISMIC_WRITE_API_TOKEN="..."
+PRISMIC_MIGRATION_API_KEY="..."
 
-DRY_RUN="1"                          # 1 = dry run (safe)
-CLEAR_RICHTEXT_IMAGE="1"             # 1 = remove inline image
+DRY_RUN="1"
+CLEAR_RICHTEXT_IMAGE="1"
 THROTTLE_MS="350"
 MAX_RETRIES="8"
+```
 
-##Where To Find These
+### Where To Find These
 Repository name → Prismic dashboard
 API tokens → Settings → API & Security
 Migration key → Migration Release screen
 
-##Install Dependencies
+## Install Dependencies
 npm install @prismicio/client axios dotenv
 
-#### Running The Script
+## Running The Script
 1. Dry Run (Safe Mode)
 This does NOT modify Prismic repo.
 DRY_RUN=1 node index.mjs
@@ -67,7 +69,7 @@ DRY_RUN=1 node index.mjs
 2. Live Mode (Writes to Migration Release Only)
 DRY_RUN=0 node index.mjs
 
-#### After running:
+3. After running:
 Prismic Dashboard → Migrations → Your Migration Release
 Review the changes.
 Then manually click Publish Release when ready.
